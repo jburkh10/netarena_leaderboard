@@ -8,7 +8,7 @@ name = "k8s_operator"
 env = { SECRET = "${NEBIUS_API_KEY}", OPENAI_API_BASE = "https://api.tokenfactory.nebius.com/v1/", MODEL_NAME = "Qwen/Qwen3-Embedding-8B"}
 
 [config]
-# Prompt strategy for the agent. Options: "zeroshot_base", "zeroshot_cot", "fewshot_base", "fewshot_cot"
+# Prompt strategy for the agent. Options: "zeroshot_base", "zeroshot_cot", "fewshot_base", "fewshot_cot" Test
 prompt_type = "zeroshot_base"
 
 # Number of queries to generate for each error type (15 error types total)
