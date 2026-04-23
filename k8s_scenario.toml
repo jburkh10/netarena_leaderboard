@@ -5,11 +5,11 @@ env = { LOG_LEVEL = "INFO" }
 [[participants]]
 agentbeats_id = "019ba44f-9d1f-7ff3-8fbe-35c4ecfa40b2"
 name = "k8s_operator"
-env = { SECRET = "${NEBIUS_API_KEY}", OPENAI_API_BASE = "https://api.tokenfactory.nebius.com/v1/", MODEL_NAME = "Llama-3.3-70B-Instruct"}
+env = { SECRET = "${NEBIUS_API_KEY}", OPENAI_API_BASE = "https://api.tokenfactory.nebius.com/v1/", MODEL_NAME = "Qwen3-Coder-480B-A35B-Instruct"}
 
 [config]
 # Prompt strategy for the agent. Options: "zeroshot_base", "zeroshot_cot", "fewshot_base", "fewshot_cot" Test
-prompt_type = "zeroshot_base"
+prompt_type = "zeroshot_cot"
 
 # Number of queries to generate for each error type (15 error types total)
 num_queries = 3
